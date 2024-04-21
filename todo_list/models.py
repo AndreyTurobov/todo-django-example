@@ -6,6 +6,7 @@ class ToDoItem(models.Model):
     done = models.BooleanField(default=False)
 
     class Meta:
+        ordering = ("id", )
         verbose_name = 'ToDo Item'
         verbose_name_plural = 'ToDo Items'
 
